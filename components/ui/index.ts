@@ -1,0 +1,6 @@
+export { default as Contact } from "./Contact"
+export { default as HeroDiv } from "./HeroDiv"
+export { default as Cards } from "./Cards"
+export { default as About } from "./About"
+export { default as Mentor } from "./Mentor"
+export { default as ImageComponent } from "./ImageComponent"

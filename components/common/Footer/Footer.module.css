@@ -1,0 +1,9 @@
+.footer {
+  text-align: center;
+}
+
+@media only screen and (max-width: 786px) {
+  .footer {
+    text-align: left;
+  }
+}

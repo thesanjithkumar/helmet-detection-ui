@@ -1,0 +1,38 @@
+.blogGrid {
+  @apply grid md:grid-cols-3 sm:grid-cols-1 my-3;
+  /* grid-column-gap: 2%; */
+  width: 95%;
+  justify-content: center;
+  margin: auto;
+}
+
+.blog {
+  @apply text-center h-auto m-auto  border-denim border-b-2 rounded-l relative sm:my-5;
+  padding-bottom: 20px;
+  width: 95%;
+  //overflow: hidden;
+
+  /* margin: auto; */
+  /* height: auto; */
+}
+
+.blog:nth-child(2) {
+  /* @apply mt-10 sm:my-auto; */
+  transition-delay: 1200ms;
+}
+
+.blog:nth-child(3) {
+  /* @apply mt-10 sm:my-auto; */
+  transition-delay: 1300ms;
+}
+
+.blog:hover {
+  //scale: 1.1;
+}
+
+.blogimg {
+  transition: all 200ms ease-in-out;
+  @apply !w-full object-cover;
+  /* width: 100% !important; */
+  /* height: 60% !important; */
+}

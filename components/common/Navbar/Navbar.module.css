@@ -1,0 +1,63 @@
+/* @keyframes strike {
+  from {
+    text-decoration-color: transparent;
+  }
+  to {
+    text-decoration-color: white;
+  }
+} */
+/* .strike:hover {
+  text-decoration: line-through;
+  animation: strike 250ms linear;
+  transition: ease-in-out;
+} */
+
+/* .strike {
+  display: inline-block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: white;
+  overflow: hidden;
+  -webkit-text-stroke: 0.5px white;
+  background: linear-gradient(
+    to right,
+    transparent,
+    transparent 50%,
+    white 50%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 500ms ease;
+}
+.strike:hover {
+  background-position: 0 100%;
+} */
+
+.strike:hover {
+  mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  mask-size: 200%;
+  /* animation: shine 1s infinite; */
+}
+
+.logo {
+  width: 45px !important;
+  height: auto !important;
+}
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -50%;
+  }
+}

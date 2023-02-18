@@ -1,0 +1,99 @@
+@font-face {
+  src: url("https://www.axis-praxis.org/fonts/webfonts/MetaVariableDemo-Set.woff2")
+    format("woff2");
+  font-family: "Meta";
+  font-style: normal;
+  font-weight: normal;
+}
+.blur_img {
+  @apply w-full h-full relative;
+  filter: blur(8px);
+}
+
+.blur_bg {
+  @apply relative;
+  width: auto;
+  height: 80vh;
+}
+
+.heading {
+  @apply absolute text-white  xl:text-8xl md:text-6xl sm:text-4xl font-semibold;
+  /* transition: all 0.5s;
+  -webkit-text-stroke: 4px #d6f4f4;
+  font-variation-settings: "wght" 900, "ital" 1;
+  text-align: center;
+  color: transparent;
+  font-family: "Meta", sans-serif;
+  text-shadow: 10px 10px 0px #07bccc, 15px 15px 0px #e601c0,
+    20px 20px 0px #e9019a, 25px 25px 0px #f40468, 45px 45px 10px #482896;
+  cursor: pointer; */
+  width: auto;
+  line-height: 1.5em;
+  top: 45%;
+  left: 10%;
+  cursor: default;
+  transform: translate(-10%, -35%);
+  /* animation: fadein 1s ease-in-out; */
+  height: auto;
+}
+
+.heading:hover {
+  font-variation-settings: "wght" 100, "ital" 0;
+  text-shadow: none;
+}
+
+.contactbtn {
+  @apply absolute text-white font-medium rounded-md;
+  top: 88%;
+  margin-left: 83%;
+  padding: 10px 20px;
+  height: auto;
+  max-width: 180px;
+  /* transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1); */
+  cursor: pointer;
+  user-select: none;
+
+  -webkit-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  /* padding: 10px 40px; */
+  /* color: white; */
+  /* color: rgba(30, 22, 54, 0.6); */
+  box-shadow: rgba(255, 255, 255, 1) 0 0px 0px 2px inset;
+}
+
+.contactbtn:hover {
+  @apply text-black;
+  /* background: white;
+  transition-delay: 0.1s; */
+  color: black;
+  box-shadow: rgba(256, 256, 256, 1) 0 80px 0px 2px inset;
+}
+
+@media only screen and (max-width: 786px) {
+  .blur_bg {
+    height: 50%;
+  }
+  .heading {
+    font-size: 9vw;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .contactbtn {
+    top: 75%;
+    margin-left: 60%;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

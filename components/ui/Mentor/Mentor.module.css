@@ -1,0 +1,36 @@
+.aboutDiv {
+  @apply grid md:grid-cols-2 sm:grid-cols-1 my-3;
+  width: 100%;
+  place-items: center;
+  /* grid-template-columns: 1fr 1fr; */
+}
+
+.description {
+  @apply sm:w-[100%] lg:w-[98%] mx-auto;
+}
+
+.image {
+  @apply w-[100%] mx-auto;
+}
+
+.chart {
+  margin: 10px auto;
+}
+
+@keyframes fslider {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 92%;
+  }
+}
+
+@keyframes tslider {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 86%;
+  }
+}
