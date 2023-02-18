@@ -1,0 +1,51 @@
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 20px auto;
+  padding: 0;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+}
+
+.projectDiv {
+  width: 95%;
+  margin: auto;
+}
+
+.projectImg {
+  width: 90% !important;
+  height: auto !important;
+  margin: 40px auto;
+}
+
+.visit {
+  @apply text-white rounded;
+  -webkit-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  margin: 40px auto;
+  max-width: 180px;
+  text-decoration: none;
+  /* border-radius: 4px; */
+  padding: 10px 40px;
+  /* color: white; */
+  /* color: rgba(30, 22, 54, 0.6); */
+  box-shadow: rgba(255, 255, 255, 1) 0 0px 0px 2px inset;
+}
+
+.visit:hover {
+  color: black;
+  box-shadow: rgba(256, 256, 256, 1) 0 80px 0px 2px inset;
+}
+
+.projectBody {
+  width: 95%;
+  text-align: left;
+  margin: auto;
+}

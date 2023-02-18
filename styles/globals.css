@@ -86,16 +86,7 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: whitesmoke;
 }
 
 a {
@@ -107,4 +98,122 @@ a {
   html {
     color-scheme: dark;
   }
+}
+
+.Div {
+  display: grid;
+  grid-template-columns: auto auto;
+  height: fit-content;
+}
+
+.contactSection {
+  height: auto;
+}
+
+.contact {
+  margin: auto 10px auto;
+}
+
+.contactDiv {
+  text-align: left;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+}
+
+.contactForm {
+  margin: 20px 10px auto;
+}
+
+.description {
+  width: 90%;
+  margin: 20px 10px 20px;
+  font-size: 1rem;
+}
+
+.labels {
+  margin: 20px auto 5px;
+}
+
+.input {
+  background-color: #fafafa;
+  width: 90%;
+  height: 40px;
+  border: 2px solid #ebebeb;
+}
+
+.input:focus {
+  border: 2px solid black;
+}
+
+.lname {
+  margin: auto 20px auto;
+}
+
+.message {
+  width: 90%;
+  min-height: 100px;
+}
+
+.subject {
+  width: 90%;
+}
+
+.email {
+  width: 90%;
+}
+
+.submit {
+  margin: 20px 0px 20px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  color: white;
+}
+
+.submit:hover {
+  background-color: #292929;
+}
+
+.spacer {
+  height: 1px;
+}
+
+@media only screen and (max-width: 700px) {
+  .contactDiv {
+    width: 100%;
+  }
+  .Div {
+    grid-template-columns: auto;
+  }
+  .lname {
+    width: 50%;
+  }
+}
+
+.mainDiv {
+  display: block;
+  display: grid;
+  height: auto;
+  place-items: center;
+}
+
+.submit {
+  @apply text-white rounded bg-black;
+  -webkit-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -moz-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -ms-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  -o-transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  transition: all 550ms cubic-bezier(0.39, 0.5, 0.15, 1.36);
+  display: block;
+  max-width: 180px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: rgba(255, 255, 255, 1) 0 0px 0px 2px inset;
+}
+
+.submit:hover {
+  @apply text-black;
+  background-color: #ffffff;
+  box-shadow: rgba(256, 256, 256, 1) 0 0px 0px 40px inset;
 }
