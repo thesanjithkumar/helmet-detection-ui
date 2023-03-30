@@ -34,7 +34,7 @@ const Project: FC<Props> = ({ images }) => {
                     loading="lazy"
                   />
                 </div>
-                <p className="text-black">{image.name}</p>
+                <p className="text-black">{image.id}</p>
               </a>
             </div>
           ))}
