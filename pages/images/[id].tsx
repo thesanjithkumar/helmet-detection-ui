@@ -24,7 +24,7 @@ const image = ({ image }: Props) => {
         <title>{image.name}</title>
       </Head>
       <div className={`${s.projectDiv}`}>
-        <p className={`${s.title} !text-black`}>{image.name}</p>
+        {/* <p className={`${s.id} !text-black`}>{image.name}</p> */}
         <Image
           fill
           src={image.image}
@@ -36,7 +36,7 @@ const image = ({ image }: Props) => {
           Time Stamp: {new Date(image.pub_date).toString()}
         </p>
         <p className={`text-black text-[18px] my-3 font-semibold`}>
-          Vehicle Number: {image.name}
+          Vehicle Number: {image.id}
         </p>
         <p className={`text-black text-[18px] my-3 font-semibold`}>
           Location: {image.location}
